@@ -27,4 +27,52 @@ nav ul li a{
    color: #fff;
 }
 
+header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem;
+}
 
+header div#img-rocket {
+   display: flex;
+   justify-content: center;
+}
+
+header div p{
+   font-size: 2vw;
+   font-weight: 700;
+   color: #3359ec;
+}
+
+header div span{
+   font-size: 1vw;
+   font-weight: 500;
+   color: #0066ff;
+}
+
+header div#img-rocket img{
+   width: 60%;
+}
+
+section#sobre-mim{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 4rem;
+   background-color: #3359ec;
+}
+
+
+section#sobre-mim div img{
+   width: 60%;
+   border-radius: 50%;
+
+}
+
+section#sobre-mim div p{
+   font-size: 1.1vw;
+   text-align: justify;
+   color: #fff;
+   line-height: 2.5rem;
+}
