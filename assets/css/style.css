@@ -76,3 +76,50 @@ section#sobre-mim div p{
    color: #fff;
    line-height: 2.5rem;
 }
+
+section#projetos{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem;
+}
+
+section#projetos div img{
+   display: block;
+   margin: auto;
+}
+
+section#projetos div h2{
+   text-align: center;
+   padding: 1rem;
+}
+
+section#projetos div p{
+   text-align: justify;
+}
+
+section#projetos div{
+   padding: 2rem;
+}
+
+section#projetos div button{
+   border: 1px solid #3359ec;
+   background-color: #fff;
+   color: #3359ec;
+   padding: 1rem;
+   font-size: .8vw;
+   font-weight: 600;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   margin-top: 2rem;
+   cursor: pointer;
+   transition: .6s ease-out;
+}
+
+section#projetos div button:hover{
+   background-color: #3359ec;
+   color: #fff;
+   transform: scale(1.2);
+}
+
