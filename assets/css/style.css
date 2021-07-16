@@ -6,7 +6,7 @@
    font-family: 'Noto Sans JP', sans-serif, Arial;
 }
 
-html{
+html, body{
    scroll-behavior: smooth;
 }
 
@@ -73,7 +73,8 @@ section#sobre-mim{
 section#sobre-mim div img{
    width: 60%;
    border-radius: 50%;
-
+   display: block;
+   margin: auto;
 }
 
 section#sobre-mim div p{
@@ -84,13 +85,19 @@ section#sobre-mim div p{
 }
 
 section#projetos{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 3rem;
+   display: flex; /* Aciona o flex-box e coloca um item do lado do outro automaticamente */
+   justify-content: center; /* Alinha os itens horizontalmente */
+   align-items: center; /* Alinha os itens verticalmente */
+   padding: 3rem; /* Espaçamento interno nos elementos */
+   flex-wrap: wrap;
+}
+
+section#projetos div{
+   width: 20rem;
 }
 
 section#projetos div img{
+   /* Essa duas linhas, alinham o elemento(tag) centralmente */
    display: block;
    margin: auto;
 }
@@ -178,3 +185,104 @@ section#habilidades div span#css{
    border-radius: 1rem;
    width: 30%;
 }
+
+
+/* Seção de contato */
+
+section#contato {
+   padding: 3rem 10rem 3rem 10rem; /* Sentido horario: Cima, direita , baixo, esquerda */
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap; /* Quebra o conteúdo para a próxima linha caso não haja mais espaço para esse conteúdo na tela */
+}
+
+section#contato div#redes{
+   width: 100%; /* Faz com que a div rede ocupe 100% do espaço na tela */
+}
+
+section#contato div#redes h3{
+   text-align: center; /* Alinhamento centralizado do texto */
+   font-size: 2.5rem; /* Tamanho da fonte do elemento */
+   margin-bottom: 2rem; /* Margem para baixo do elemento */
+}
+
+section#contato div#redes div#icons{
+   display: flex;
+   justify-content: center;
+}
+
+section#contato div#redes div#icons a{
+   text-decoration: none; /* Tira o sublinhado e toda decoração de texto do link */
+   color: #0066ff;
+   font-size: 4rem;
+   padding: 2rem;
+   transition: all .4s ease-out; /*  Suavisa a transição de cores no hover */
+}
+
+/* o :hover serve para quando passar o mouse por cima do elemento fazer algo */
+section#contato div#redes div#icons a:hover{
+   color: #71aaff;
+}
+
+section#contato div#redes div#icons a i{
+   transition: all .4s ease-out;
+}
+
+/* O atributo transform só muda um elemento que aparece efetivamente na tela, por isso colocamos ele na tag i, e não na tag a */
+section#contato div#redes div#icons a i:hover{
+   transform: scale(1.2);
+}
+
+section#contato div#form{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+section#contato div#form h3{
+   width: 100%;
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+}
+
+section#contato div#form form{
+   width: 50%;
+}
+
+/* A virgula serve para estilizar dois elementos ao mesmo tempo */
+section#contato div#form form input, textarea{
+   width: 100%;
+   padding: .5rem;
+   font-size: 1.2rem;
+   border: 1px solid #ccc;
+   margin-top: .5rem;
+   margin-bottom: 1rem;
+   outline: none; /* Retira a borda do input quando clico dentro dele */
+}
+
+section#contato div#form form label{
+   font-size: 1.2rem;
+}
+
+section#contato div#form form button{
+   border: 1px solid #3359ec;
+   background-color: #fff;
+   color: #3359ec;
+   padding: 1rem;
+   font-size: .8vw;
+   font-weight: 600;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   transition: .6s ease-out;
+   width: 40%;
+}
+
+section#contato div#form form button:hover{
+   background-color: #3359ec;
+   color: #fff;
+   transform: scale(1.2);
+}
+
